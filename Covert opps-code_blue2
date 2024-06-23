@@ -1,0 +1,119 @@
+python-code_blue
+```
+# (link unavailable)
+from flask import Flask, render_template, request, redirect, url_for
+
+app = Flask(__name__)
+
+# Home route
+@app.route("/")
+def home():
+	return render_template("home.html")
+
+# About route
+@app.route("/about")
+def about():
+	return render_template("about.html")
+
+# Services route
+@app.route("/services")
+def services():
+	return render_template("services.html")
+
+# Contact route
+@app.route("/contact", methods=["GET", "POST"])
+def contact():
+	if request.method == "POST":
+		# Handle form submission
+		name = request.form["name"]
+		email = request.form["email"]
+		message = request.form["message"]
+		# Add code to send email or store in database
+		return redirect(url_for("thank_you"))
+	return render_template("contact.html")
+
+# Thank you route
+@app.route("/thank_you")
+def thank_you():
+	return render_template("thank_you.html")
+
+if __name__ == "__main__":
+	app.run(debug=True)
+```
+
+HTML templates:
+
+```
+# home.html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BlackShip - Off Odds</title>
+</head>
+<body>
+	<h1>Welcome to BlackShip - Off Odds</h1>
+</body>
+</html>
+
+# about.html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us - BlackShip - Off Odds</title>
+</head>
+<body>
+	<h1>About Us</h1>
+	<p>We are BlackShip - Off Odds, a logistics company.</p>
+</body>
+</html>
+
+# services.html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Our Services - BlackShip - Off Odds</title>
+</head>
+<body>
+	<h1>Our Services</h1>
+	<ul>
+		<li>Shipping</li>
+		<li>Tracking</li>
+		<li>Warehousing</li>
+	</ul>
+</body>
+</html>
+
+# contact.html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Get in Touch - BlackShip - Off Odds</title>
+</head>
+<body>
+	<h1>Get in Touch</h1>
+	<form method="post">
+		<label for="name">Name:</label>
+		<input type="text" name="name" required><br><br>
+		<label for="email">Email:</label>
+		<input type="email" name="email" required><br><br>
+		<label for="message">Message:</label>
+		<textarea name="message" required></textarea><br><br>
+		<input type="submit" value="Send">
+	</form>
+</body>
+</html>
+
+# thank_you.html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thank You - BlackShip - Off Odds</title>
+</head>
+<body>
+	<h1>Thank You</h1>
+	<p>Your message has been sent successfully.</p>
+</body>
+</html>
+```
+
+Basic python framework created by Tahir
