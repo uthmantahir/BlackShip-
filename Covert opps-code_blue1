@@ -1,0 +1,53 @@
+html-code_blue
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BlackShip - Off Odds</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#off-odds">Off Odds</a></li>
+				<li><a href="#track-shipment">Track Shipment</a></li>
+				<li><a href="#get-a-quote">Get a Quote</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="home">
+			<!-- Hero Section and Featured Services -->
+		</section>
+		<section id="services">
+			<!-- Shipping, Tracking, Warehousing, and Other Services -->
+		</section>
+		<section id="off-odds">
+			<!-- Off Odds description and specialized shipping services -->
+		</section>
+		<section id="track-shipment">
+			<!-- Tracking tool and shipment status updates -->
+		</section>
+		<section id="get-a-quote">
+			<!-- Quote form and calculator -->
+		</section>
+		<section id="resources">
+			<!-- Blog, FAQs, and Glossary -->
+		</section>
+		<section id="about">
+			<!-- Company history, team profiles, and contact information -->
+		</section>
+	</main>
+	<footer>
+		<!-- Contact information, social media links, and privacy policy -->
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>
+```
