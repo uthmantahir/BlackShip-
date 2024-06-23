@@ -82,23 +82,5 @@ h2 {
 }
 
 
-
-```
-
-//And here's a basic JavaScript file (script.js)
-
-```
-// Add event listeners for navigation
-navLinks = document.querySelectorAll('nav a');
-navLinks.forEach(link => {
-  link.addEventListener('click', event => {
-    event.preventDefault();
-    const target = event.target.getAttribute('href');
-    document.querySelector(target).scrollIntoView({
-      behavior: 'smooth'
-    });
-  });
-});
-
-```
+Basic css framework created by Tahir 
 
